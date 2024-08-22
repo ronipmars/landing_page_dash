@@ -1,0 +1,464 @@
+.logo-img {
+    max-height: 60px;
+    width: auto;
+    border-radius: 10px; /* Ajuste o valor para o quanto deseja arredondar as bordas */
+}
+
+footer .footer-logo .footer-img {
+    max-height: 40px;
+    width: auto;
+    margin-bottom: 10px;
+    border-radius: 10px; /* Aplicar o mesmo arredondamento no logo do rodapé, se necessário */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: white;
+}
+
+header {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #003366;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    margin: 0 0 10px;
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.cta {
+    display: inline-block;
+    background-color: #00cc99;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.services, .testimonials, .contact {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #003366;
+}
+
+.service-item {
+    color: white;
+    background-color: #003366;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact button {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #0066cc;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.hero-img, .service-img, .contact-img, .footer-img {
+    color: white;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.testimonial-video iframe {
+    width: 100%;
+    height: 315px; /* Ajuste conforme necessário */
+    margin: 20px 0;
+}
+
+
+/*/CARROSEL/*/
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.carousel {
+    position: relative;
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.hero-img {
+    min-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-prev {
+    left: 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+.carousel-next {
+    right: 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+
+/* Responsividade para Dispositivos Móveis */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 1.8em; /* Ajuste o tamanho do texto para se adaptar melhor às telas pequenas */
+    }
+
+    .hero p {
+        font-size: 1em; /* Tamanho menor do parágrafo para melhor legibilidade */
+    }
+
+    .carousel {
+        max-width: 100%; /* O carrossel ocupará toda a largura da tela */
+    }
+
+    .hero-img {
+        max-height: 300px; /* Limita a altura da imagem para que ela não fique muito alta em telas pequenas */
+        object-fit: cover; /* Faz com que a imagem se ajuste melhor ao espaço disponível */
+    }
+}
+
+.service-content {
+    display: flex;
+    flex-wrap: wrap; /* Isso permite que as colunas se ajustem em telas menores */
+    align-items: center; /* Centraliza verticalmente o conteúdo nas colunas */
+    gap: 20px; /* Espaçamento entre as colunas */
+}
+
+.service-image {
+    flex: 1; /* Ocupa 50% da largura disponível */
+}
+
+.service-text {
+    flex: 2; /* Ocupa o dobro da largura da imagem, ajuste conforme necessário */
+}
+
+.service-img-large {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    border-radius: 10px;
+}
+
+/* Para telas menores */
+@media (max-width: 768px) {
+    .service-content {
+        flex-direction: column; /* Muda para uma única coluna em dispositivos móveis */
+    }
+
+    .service-image,
+    .service-text {
+        flex: 1; /* As duas colunas ocupam a largura completa em dispositivos móveis */
+    }
+}
+
+
+
+/* elegante */
+.elegant-box {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+.service-img-large {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.elegant-heading {
+    font-size: 1.8em;
+    color: #003366;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00cc99;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.elegant-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.elegant-list li {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.elegant-list li i {
+    color: #00cc99;
+    margin-right: 10px;
+}
+
+
+
+.about-me {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+.about-text {
+    flex: 2;
+    color: #333;
+}
+
+.about-text h3 {
+    font-size: 2em;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.about-text h4 {
+    font-size: 1.5em;
+    color: #0066cc;
+    margin-bottom: 15px;
+}
+
+.skills-list,
+.experience-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li,
+.experience-list li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.skills-list li i,
+.experience-list li i {
+    color: #00cc99;
+    margin-right: 10px;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column-reverse; /* Foto abaixo do texto em dispositivos móveis */
+    }
+
+    .about-text,
+    .about-image {
+        flex: 1;
+        text-align: center;
+    }
+}
+
+.proof-section {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.proof-heading {
+    font-size: 2em;
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+.proof-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.proof-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 300px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+.elegant-heading {
+    font-size: 1.5em;
+    color: #003366;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00cc99;
+    padding-bottom: 5px;
+}
+
+.proof-card p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .proof-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proof-card {
+        max-width: 100%;
+    }
+}
+
+
+.benefits-section {
+    /*background-color: #f4f4f4;*/
+    background-color: #003366;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.benefits-heading {
+    font-size: 2em;
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+.benefits-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.benefit-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+.elegant-heading {
+    font-size: 1.5em;
+    color: #0066cc;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00cc99;
+    padding-bottom: 5px;
+}
+
+.benefit-card p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .benefits-content {
+        grid-template-columns: repeat(1, 1fr); /* Muda para uma coluna em telas menores */
+    }
+}
+

@@ -36,4 +36,4 @@ Este repositório contém o código-fonte para o site **DashboardsPro**, uma pla
 
 1. **Clonar o repositório**:
    ```bash
-   git clone https://github.com/seu_usuario/dashboardspro.git
+   git clone https://github.com/ronipmars/landing_page_dash.git
